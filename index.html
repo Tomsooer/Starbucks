@@ -8,11 +8,27 @@
     <title>Starbucks</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
+
+    <style>
+        .stats__item span::after {
+            content: "+";
+            color: #fff;
+            font-size: 40px;
+        }
+    </style>
+    <style>
+        .stats__item span::after {
+            font-size: 24px;
+            content: "+";
+            color: greenyellow;
+        }
+    </style>
+
 </head>
 <body>
 <header class="header">
     <div class="container">
-        <a href="#!" class="logo">StarBucks</a>
+        <a href="#!" class="logo gradient header__logo ">StarBucks</a>
         <nav class="header__nav">
             <a href="#!" class="header__link">Home</a>
             <a href="#!" class="header__link">Select</a>
@@ -34,7 +50,28 @@
                 <a href="" class="btn">Select a coffee</a>
                 <a href="" class="lik">More</a>
             </div>
-            .stats
+            <div class="stats">
+                <p class="stats__item">
+                    <span>9k+</span>
+
+                    Premium
+
+                    Users
+                </p>
+                <p class="stats__item">
+                    <span>2k+</span>
+                    Happy Customer
+                </p>
+                <p class="stats__item">
+                    <span>28+</span>
+                    Awards Winning
+                </p>
+            </div>
+            
+            <div class="welcome__img-wrapper">
+                <img src="./images/cups/green-big.png" alt="" class="welcome__img">
+            </div>
+            
         </div>
     </section>
 </main>
@@ -43,15 +80,10 @@
 </html>
 
 
-9k+
 
-2k+
 
-28+
+v
 
-v Users
 
-Happy Customer
 
-Awards Winning
 
