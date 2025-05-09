@@ -11,6 +11,11 @@ ExtraBold800
     box-sizing: border-box;
 }
 
+
+html {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
@@ -21,13 +26,30 @@ body {
     background-color: #121517;
 }
 
+img {
+    max-width: 100%;
+}
+
 h1, h2 {
     font-weight: 800;
+    margin: 0;
+}
+
+a:hover {
+    opacity: 0.5;
+    transition: 1s;
 }
 
 a {
     color: #DEDEDE;
     text-decoration: none;
+}
+
+.text-gradient {
+    background: linear-gradient(263deg, #237249 3.14%, #35C66B 87.2%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .container {
@@ -36,3 +58,30 @@ a {
     padding: 0 15px;
 }
 
+.logo {
+    font-weight: 800;
+    font-size: 38px;
+    letter-spacing: -0.03px;
+}
+
+.btn {
+    padding: 20px 80px;
+    display: inline-block;
+    border-radius: 83px;
+    background: linear-gradient(265deg, #237249 6.79%, #35C66B 97.2%);
+
+    font-weight: 639;
+    font-size: 24px;
+    letter-spacing: -0.02px;
+    color: #fff;
+}
+.link {
+    padding: 20px 50px;
+    background: #121517;
+    border: 1px solid #DADADA;
+    border-radius: 83px;
+    font-size: 24px;
+    letter-spacing: -0.03px;
+    color: #D9D9D9;
+
+}

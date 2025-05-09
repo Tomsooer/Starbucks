@@ -1,36 +1,40 @@
-.welcome {
+.main {
 
 }
 
-.container {
+.welcome {
 
 }
 
 .title {
     font-size: 80px;
     line-height: 109%;
-    letter-spacing: -0.3px;
-    color: #FFF;
-
+    letter-spacing: -0.03em;
+    color: #fff;
 }
 
 .welcome__title {
-
+    margin-bottom: 55px;
 }
 
 .welcome__text {
+    margin-bottom: 55px;
+}
+
+.welcome__desc {
 
 }
 
-.welcome__btn-wrapper {
-
+.welcome__btns-wrapper {
+    display: flex;
+    gap: 15px;
 }
 
 .btn {
 
 }
 
-.lik {
+.link {
 
 }
 
@@ -39,6 +43,21 @@
 }
 
 .stats__item {
+    line-height: 144%;
+}
+
+.stats__num {
+    font-size: 62px;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.stats__num{
+    contain: "+";
+    background: linear-gradient(267deg, #237249 -46.81%, #35C66B 52.2%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
