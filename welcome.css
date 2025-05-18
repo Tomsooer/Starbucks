@@ -1,9 +1,15 @@
-.main {
-
+.welcome {
+    margin-top: 30px;
 }
 
-.welcome {
+.welcome__desk {
+    max-width: 575px;
+}
 
+.welcome .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .title {
@@ -15,35 +21,40 @@
 
 .welcome__title {
     margin-bottom: 55px;
+    position: relative;
+}
+
+.welcome__title::before {
+    content: "";
+    position: absolute;
+    left: 40px;
+    top: 80px;
+    z-index: -5;
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    background: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.73) 51.85%);
+    filter: blur(90px);
 }
 
 .welcome__text {
     margin-bottom: 55px;
 }
 
-.welcome__desc {
-
-}
-
 .welcome__btns-wrapper {
     display: flex;
     gap: 15px;
-}
-
-.btn {
-
-}
-
-.link {
-
+    margin-bottom: 55px;
 }
 
 .stats {
-
+    display: flex;
+    gap: 45px;
 }
 
 .stats__item {
     line-height: 144%;
+    width: 126px;
 }
 
 .stats__num {
@@ -52,19 +63,46 @@
     color: #fff;
 }
 
-.stats__num{
-    contain: "+";
-    background: linear-gradient(267deg, #237249 -46.81%, #35C66B 52.2%);
+.stats__num::after {
+    content: "+";
+    background: linear-gradient(244deg, #237249 0%, #35c66b 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .welcome__img-wrapper {
+    padding-right: 60px;
+}
 
+.welcome__img-wrapper::before {
+    content: "";
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    right: -46px;
+    bottom: -410px;
+    z-index: -10;
+    background-image: url("./images/icons/lines.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.welcome__img-wrapper::after {
+    content: "";
+    position: absolute;
+    right: 130px;
+    bottom: 60px;
+    z-index: -5;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.73) 51.85%);
+    filter: blur(170px);
 }
 
 .welcome__img {
-
+    width: 470px;
+    animation: moveCup 1.5s infinite alternate;
 }

@@ -1,0 +1,112 @@
+.benefits {
+    margin-top: 110px;
+}
+
+.container {
+}
+
+.benefits__container {
+    max-width: 1030px;
+    padding-top: 55px;
+    padding-bottom: 25px;
+    position: relative;
+    justify-content: space-around;
+    display: flex;
+    background: linear-gradient(265deg, #FFF 4.95%, #E5E5E5 64.19%, #FBFBFB 88.37%);
+    border-radius: 46px;
+}
+
+.benefits__container::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 50px;
+    z-index: -5;
+    width: 400px;
+    height: 150px;
+    border-radius: 100%;
+    background: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.73) 51.85%);
+    filter: blur(65px);
+}
+
+.benefits__container::after{
+    content: "we\Ahave";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    height: 180px;
+    width: 180px;
+    font-weight: 500;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-image: url("./images/icons/star.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.benefits__item {
+    max-width: 220px;
+    text-align: center;
+}
+
+.benefits__image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.benefits__image-wrapper::before {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 100%;
+    background: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.73) 51.85%);
+    color: rgba(18, 21, 23, 0.90);
+}
+
+.benefits__icons {
+    width: 146px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+}
+
+.benefits__hart {
+    top: calc(50% + 10px);
+    left: calc(50% + 5px);
+}
+
+.benefits__rocket {
+    width: 210px;
+    top: calc(50% + 10px);
+    left: calc(50% - 10px);
+}
+
+.benefits__money {
+    width: 210px;
+}
+
+.benefits__title {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 32px;
+    color: #121517;
+}
+
+.benefits__desc {
+    line-height: 163%;
+    color: rgba(18, 21, 23, 0.90);
+}

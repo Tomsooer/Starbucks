@@ -11,18 +11,20 @@ ExtraBold800
     box-sizing: border-box;
 }
 
-
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
+    overflow-x: hidden;
     margin: 0;
     font-family: "Montserrat", sans-serif;
     color: #D9D9D9;
+
     font-size: 20px;
-    line-height: 30px;
-    letter-spacing: -0.02px;
+    line-height: 163%;
+    letter-spacing: -0.02em;
     background-color: #121517;
 }
 
@@ -30,58 +32,112 @@ img {
     max-width: 100%;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-weight: 800;
     margin: 0;
 }
 
-a:hover {
-    opacity: 0.5;
-    transition: 1s;
+p {
+    margin: 0;
 }
 
 a {
-    color: #DEDEDE;
+    color: #D9D9D9;
     text-decoration: none;
+    transition: opacity 0.3s;
 }
 
-.text-gradient {
-    background: linear-gradient(263deg, #237249 3.14%, #35C66B 87.2%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+button {
+    transition: opacity 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+a:hover, button:hover {
+    opacity: 0.8;
 }
 
 .container {
-    max-width: 1000px;
+    width: 100%;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 .logo {
     font-weight: 800;
-    font-size: 38px;
-    letter-spacing: -0.03px;
+    font-size: 37px;
+    letter-spacing: -0.03em;
+}
+
+.text-gradient {
+    background: linear-gradient(263.46deg, #237249 3.14%, #35C66B 87.2%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .btn {
     padding: 20px 80px;
-    display: inline-block;
     border-radius: 83px;
-    background: linear-gradient(265deg, #237249 6.79%, #35C66B 97.2%);
-
+    background: linear-gradient(210deg, #237249 0%, #35c66b 100%);
     font-weight: 639;
     font-size: 24px;
-    letter-spacing: -0.02px;
-    color: #fff;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    transition: 0.3s;
 }
+
+
+
 .link {
-    padding: 20px 50px;
+    padding: 20px 55px;
     background: #121517;
-    border: 1px solid #DADADA;
+    border: 1px solid #dadada;
     border-radius: 83px;
     font-size: 24px;
-    letter-spacing: -0.03px;
+    letter-spacing: -0.03em;
     color: #D9D9D9;
+}
 
+.text-row {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 60px;
+}
+
+.text-row.text-row--reverse {
+    flex-direction: row-reverse;
+}
+
+.text-row__title {
+    width: 400px;
+    position: relative;
+}
+
+.text-row__title::before {
+    content: "";
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    z-index: -5;
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    background: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.73) 51.85%);
+    filter: blur(90px);
+}
+
+.text-row__desc {
+    width: 455px;
+}
+
+@keyframes moveCup {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: translateY(-40px);
+    }
 }
