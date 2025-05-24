@@ -107,13 +107,13 @@ a:hover, button:hover {
     margin-bottom: 60px;
 }
 
-.text-row.text-row--reverse {
+.text-row.text-row__revers {
     flex-direction: row-reverse;
 }
 
 .text-row__title {
     width: 400px;
-    position: relative;
+    position: relative
 }
 
 .text-row__title::before {

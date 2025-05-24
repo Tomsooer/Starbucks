@@ -1,0 +1,48 @@
+.events {
+    margin-top: 100px;
+}
+
+.events__inner-wrapper {
+    display: grid;
+    grid-auto-rows:  260px ;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+}
+
+.event {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.event__title {
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 100%;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.event__btn {
+    padding: 20px 50px;
+}
+
+.events__prise {
+    background-image: url("./images/events/1.png");
+}
+
+.events__kitchen {
+    background-image: url("./images/events/2.png");
+}
+
+.events__free {
+    background-image: url("./images/events/3.png");
+}
+
+.events__social {
+    background-image: url("./images/events/4.png");
+}
+
+.events__chose {
+    background-image: url("./images/events/5.png");
+}
