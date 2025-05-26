@@ -107,7 +107,7 @@ a:hover, button:hover {
     margin-bottom: 60px;
 }
 
-.text-row.text-row__revers {
+.text-row.text-row__reverse {
     flex-direction: row-reverse;
 }
 

@@ -4,45 +4,86 @@
 
 .events__inner-wrapper {
     display: grid;
-    grid-auto-rows:  260px ;
+    gap: 25px;
+    grid-auto-rows: 260px;
     grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+    grid-template-areas: "price price kitchen kitchen"
+                          "free social social choose";
+    position: relative;
+}
+
+.events__inner-wrapper::before {
+    content: "";
+    width: 860px;
+    height: 620px;
+    position: absolute;
+    top: -350px;
+    left: -400px;
+    z-index: -10;
+    background-image: url("/images/icons/lines.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(80deg);
+}
+
+.events__inner-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: 50%;
+    z-index: -5;
+    width: 320px;
+    height: 270px;
+    border-radius: 100%;
+    background-color: rgba(217, 217, 217, 0.2);
+    filter: blur(100px);
 }
 
 .event {
+    padding: 45px 30px 20px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 30px;
 }
 
 .event__title {
     margin-bottom: 50px;
+    max-width: 294px;
     font-weight: 500;
     font-size: 32px;
-    line-height: 100%;
+    line-height: 109%;
     color: #fff;
     text-transform: uppercase;
 }
 
 .event__btn {
     padding: 20px 50px;
+    display: inline-block;
 }
 
-.events__prise {
-    background-image: url("./images/events/1.png");
+.event--price {
+    background-image: url("/images/events/1.png");
+    grid-area: price;
 }
 
-.events__kitchen {
-    background-image: url("./images/events/2.png");
+.event--kitchen {
+    background-image: url("/images/events/2.png");
+    grid-area: kitchen;
 }
 
-.events__free {
-    background-image: url("./images/events/3.png");
+.event--free {
+    background-image: url("/images/events/3.png");
+    grid-area: free;
 }
 
-.events__social {
-    background-image: url("./images/events/4.png");
+.event--social {
+    background-image: url("/images/events/4.png");
+    grid-area: social;
 }
 
-.events__chose {
-    background-image: url("./images/events/5.png");
+.event--choose {
+    background-image: url("/images/events/5.png");
+    grid-area: choose;
 }
