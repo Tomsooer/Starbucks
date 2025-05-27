@@ -1,0 +1,69 @@
+.contacts {
+    margin-top: 100px;
+}
+
+.contacts .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__text {
+    width: 390px;
+}
+
+.title {
+}
+
+.contacts__img {
+    width: 350px;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%, 0 26%);
+}
+
+.contacts__desc {
+    margin-bottom: 50px;
+}
+
+.text-gradient {
+}
+
+.contacts__phone {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 32px;
+    color: #fff;
+}
+
+.contacts__phone::before {
+    content: "";
+    width: 45px;
+    height: 45px;
+    background-image: url("./images/icons/phone.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.contacts__img-wrapper {
+    position: relative;
+    padding-right: 35px;
+}
+
+.contacts__img-inner-wrapper::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #237249;
+    position: absolute;
+    bottom: -25px;
+    right: -35px;
+    z-index: -10;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%, 0 26%);
+}
+
+.contacts__img-inner-wrapper {
+}
+
+.contacts__img {
+    width: 350px;
+}
