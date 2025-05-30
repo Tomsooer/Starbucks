@@ -10,6 +10,8 @@
 .footer__row {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 85px;
 }
 
 .footer__logo {
@@ -50,9 +52,10 @@
 }
 
 .footer__arrow {
-
+    height: 35px;
 }
 
 .footer__phone {
-
+    font-weight: 500;
+    font-size: 26px;
 }
