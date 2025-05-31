@@ -1,0 +1,20 @@
+@media (max-width: 1140px) {
+    .benefits__container::after {
+        left: 50px;
+    }
+
+    .welcome__img-wrapper {
+        padding-right: 0;
+    }
+
+    .event--choose {
+        display: none;
+    }
+
+    .events__inner-wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "price price"
+                             "free social"
+                             "kitchen kitchen";
+    }
+}
