@@ -21,7 +21,7 @@
 
 .welcome__title {
     margin-bottom: 55px;
-    position: relative;
+   position: relative;
 }
 
 .welcome__title::before {
@@ -35,6 +35,7 @@
     border-radius: 100%;
     background: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.73) 51.85%);
     filter: blur(90px);
+
 }
 
 .welcome__text {
@@ -69,10 +70,12 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
 }
 
 .welcome__img-wrapper {
     padding-right: 60px;
+    position: relative;
 }
 
 .welcome__img-wrapper::before {
@@ -80,7 +83,7 @@
     width: 800px;
     height: 800px;
     position: absolute;
-    right: -46px;
+    right: -100px;
     bottom: -410px;
     z-index: -10;
     background-image: url("./images/icons/lines.svg");
@@ -105,4 +108,5 @@
 .welcome__img {
     width: 470px;
     animation: moveCup 1.5s infinite alternate;
+    position: relative;
 }

@@ -93,6 +93,7 @@
 }
 
 .benefits__hart {
+    position: absolute;
     top: calc(50% + 10px);
     left: calc(50% + 5px);
 }
