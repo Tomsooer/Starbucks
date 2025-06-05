@@ -379,9 +379,155 @@
     }
 
     .events__inner-wrapper {
-       grid-auto-rows: auto;
+        grid-auto-rows: auto;
         grid-template-columns: 1fr 1fr;
         gap: 15px 25px;
+
+        grid-template-areas:
+         "price price"
+          "free social"
+          "kitchen kitchen";
     }
 
+    .event--choose {
+        display: none;
+    }
+
+    .text-row__desc {
+        width: auto;
+        max-width: 460px;
+    }
+
+    .contacts__img {
+        width: 340px;
+        height: 240px;
+    }
+
+    .contacts__img-inner-wrapper::before {
+        bottom: -15px;
+    }
+
+    .contacts__img-wrapper::after {
+        width: 630px;
+        height: 630px;
+        right: -135px;
+        bottom: -260px;
+    }
+
+    .contacts {
+        padding-top: 90px;
+        padding-bottom: 40px;
+    }
+
+    .contacts__img-inner-wrapper::after {
+        width: 200px;
+        height: 200px;
+        font-size: 28px;
+        right: -140px;
+    }
+
+    .contacts__title {
+        margin-bottom: 40px;
+    }
+
+    .contacts__desc {
+        margin-bottom: 40px;
+    }
+
+    .contacts__phone {
+        font-size: 20px;
+        justify-content: center;
+    }
+
+    .contacts__phone::before {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contacts__text {
+        width: auto;
+        max-width: 390px;
+    }
+
+    .contacts__img-wrapper::before {
+        left: auto;
+        right: -50px;
+        top: 80px;
+        filter: blur(60px);
+    }
+
+    .contacts__text::before {
+        content: none;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .footer__up-link {
+        width: 55px;
+        height: 55px;
+        border-right: 18px;
+    }
+
+    .footer__arrow {
+        height: 27px;
+    }
+
+    .footer__phone {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .history__text::before {
+        width: 550px;
+        height: 550px;
+        right: -45px;
+        bottom: -240px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .header__link + .header__link {
+        margin-left: 15px;
+    }
+
+    .btn {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .contacts__img-inner-wrapper::before {
+        right: -30px;
+    }
+
+    .contacts__img-inner-wrapper::after {
+        width: 225px;
+        height: 150px;
+        font-size: 24px;
+    }
+
+    .benefits__badge {
+        font-size: 26px;
+    }
+
+    .welcome__img-wrapper::before {
+        width: 420px;
+        height: 370px;
+        right: -33px;
+        bottom: 230px;
+    }
+
+    .welcome__img-wrapper::after {
+        right: 190px;
+        bottom: 440px;
+        width: 140px;
+        height: 140px;
+    }
 }
