@@ -48,7 +48,7 @@
     content: "";
     width: 45px;
     height: 45px;
-    background-image: url("/images/icons/phone.png");
+    background-image: url("./images/icons/phone.png");
     background-size: contain;
     background-position: center;
 }
@@ -124,7 +124,7 @@
     color: #ffffff;
     transform: translate(-50%, -50%);
 
-    background-image: url("/images/icons/star2.svg");
+    background-image: url("./images/icons/star2.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
